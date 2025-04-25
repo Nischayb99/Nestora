@@ -1,0 +1,47 @@
+.show-con{
+  margin-top: 2rem;
+  overflow: hidden;
+}
+.show-card-con{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.show-title-con{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.show-img-con{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#show-img {
+    height: 20rem;
+    width: 28rem;
+    border-radius: 1rem;
+}
+
+.btns {
+  display: flex;
+}
+.show-card {
+  padding-left: 0;
+  padding-right: 0;
+}
+.show-edit-btn {
+  height: 2.5rem;
+}
+
+/* Map */
+#map {
+  height: 400px;
+  width: 600px;
+}
+@media (max-width: 440px) {
+  #map {
+    height: 16rem;
+    width: 16rem;
+  }
+}

@@ -8,40 +8,6 @@ body{
     flex: 1;
 }
 
-/* Footer Style */
-.f-links{
-    text-decoration: none;
-    color: #222;
-}
-.f-info-links a{
-    text-decoration: none;
-    color: #222;
-}
-.f-info-links a:hover{
-    text-decoration: underline;
-}
-.f-info-links, 
-.f-info-socials, 
-.f-info-brand{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.f-info-socials i{
-    font-size: 1.2rem;
-    margin-right: 1rem;
-}
-.f-info{
-    text-align: center;
-    height: 8rem;
-    background-color: #ebebeb;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: space_evenly;
-}
-
 /* Cards */
 .listing-card{
     width: 100%;
@@ -73,6 +39,7 @@ body{
     background-color: #fff;
 }
 
+
 /* New Page */
 .add-btn{
     background-color: #fe424d !important;
@@ -84,7 +51,6 @@ body{
     background-color: #fe424d !important;
     border: none !important;
 }
-
 /* Show Page */
 .show-img{
     height: 30vh;
