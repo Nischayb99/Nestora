@@ -1,0 +1,171 @@
+nav {
+  width: 99vw;
+  height: 10rem;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #fff;
+}
+.nav-con {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* Navbar Start Container */
+.nav-start-con {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.t-d-n {
+  text-decoration: none;
+}
+.nav-logo h1 {
+  font-size: 2.2rem;
+  color: #fe424d;
+  margin-left: 1.6rem;
+}
+.nav-explore {
+  margin-left: 2rem;
+  font-size: 1.4rem;
+  color: #222;
+}
+/* Navbar Center Container */
+.search-farm{
+  display: flex;
+  align-items: center;
+}
+.search-btn {
+  background-color: #fe424d;
+  color: #fff;
+  border-radius: 25px;
+  padding: 0 1rem 0 1rem;
+  height: 2.6rem;
+}
+
+.search-btn:hover {
+  background-color: #fe424d;
+  color: #fff;
+}
+
+.search-btn i {
+  font-size: 1rem;
+  display: inline;
+  margin-right: 0.5rem;
+}
+
+.search-inp {
+  border-radius: 25px;
+  padding: 0.5rem 3rem 0.5rem 3rem;
+}
+/* Navbar End Container */
+.nav-end-con {
+  display: flex;
+  height: 100%;
+}
+.nav-add-con {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.nav-add {
+  color: #222;
+  margin-right: 2rem;
+  font-weight: 500;
+}
+.nav-add-sm {
+  display: none;
+}
+.nav-menu-con {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.nav-menu-con a {
+  margin-right: 1rem;
+}
+.nav-hr {
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .nav-logo h1 {
+    font-size: 2rem;
+    margin-left: 1.4rem;
+  }
+  .nav-explore {
+    font-size: 1.2rem;
+    margin-left: 1.5rem;
+  }
+  .search-inp {
+    border-radius: 25px;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    margin-left: 0.5rem;
+  }
+  .search-btn {
+    height: 2.3rem;
+    padding: 0 0.5rem 0 0.5rem;
+    font-size: 0.8rem;
+    margin-right: 0.5rem;
+  }
+
+  .search-btn i {
+    font-size: 0.8rem;
+    margin-right: 0.2rem;
+    display: none;
+  }
+  
+  .nav-add {
+    margin-right: 1rem;
+    font-weight: 500;
+    display: none;
+  }
+  .nav-add-sm {
+    display: flex;
+    color: #222;
+    margin-right: 1rem;
+    font-weight: 500;
+  }
+
+}
+@media (max-width: 800px) {
+  .nav-logo h1 {
+    font-size: 1.8rem;
+    margin-left: 1rem;
+  }
+  .nav-explore {
+    display: none;
+  }
+  .search-inp {
+    border-radius: 25px;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    margin-left: 0.5rem;
+  }
+  .search-btn {
+    height: 2.3rem;
+    padding: 0 0.5rem 0 0.5rem;
+    font-size: 0.8rem;
+    margin-right: 0.5rem;
+  }
+
+  .search-btn i {
+    font-size: 0.8rem;
+    margin-right: 0.2rem;
+    display: none;
+  }
+  
+  .nav-add {
+    margin-right: 1rem;
+    font-weight: 500;
+    display: none;
+  }
+  .nav-add-sm {
+    display: flex;
+    color: #222;
+    margin-right: 1rem;
+    font-weight: 500;
+  }
+
+}
+

@@ -8,20 +8,11 @@ body{
     flex: 1;
 }
 
-/* Navbar Style */
-.navbar {
-    height: 5rem;
-    background-color: #fff;
-}
-.fa-compass{
-    color: #fe424d !important;
-}
-.nav-link{
-    color: #222 !important;
-}
-
 /* Footer Style */
-
+.f-links{
+    text-decoration: none;
+    color: #222;
+}
 .f-info-links a{
     text-decoration: none;
     color: #222;

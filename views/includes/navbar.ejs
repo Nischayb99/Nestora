@@ -1,30 +1,6 @@
-<style>
-    .search-btn {
-        background-color: #fe424d ;
-        color: #fff;
-        border-radius: 25px;
-        padding: 0 1rem 0 1rem;
-    }
-    .search-btn:hover {
-        background-color: #fe424d ;
-        color: #fff;
-    }
-    .search-btn i {
-        font-size: 1rem;
-        display: inline;
-        margin-right: 0.5rem;
-    }
-    .search-inp{
-        border-radius: 25px;
-        padding: 0.5rem 3rem 0.5rem 3rem;
-        
-    }
-</style>
-
-<nav class="navbar navbar-expand-md bg-body-light border-bottom sticky-top" style="height: 5rem;">
+<!-- <nav class="navbar navbar-expand-md bg-body-light border-bottom sticky-top" style="height: 5rem;">
     <div class="container-fluid">
-        <a class="navbar-brand" href="/listings"><i class="fa-regular fa-compass"
-                style="color: #fe424d; font-size: 2rem;"></i></a>
+        <a class="navbar-brand" href="/listings"><i class="fa-regular fa-compass"></i></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -34,9 +10,18 @@
             </div>
             <div class="navbar-nav ms-auto">
                 <form class="d-flex" role="search">
-                    <input class="form-control me-2 search-inp" type="search" placeholder="Search Destinations" >
-                    <button class="btn search-btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i>Search</button>
-                  </form>
+                    <input class="form-control me-2 search-inp" type="search" placeholder="Search Destinations"
+                        list="category">
+                    <datalist id="category">
+                        <option value="Rooms"></option>
+                        <option value="Iconic Cities"></option>
+                        <option value="Mountains"></option>
+                        <option value="castles"></option>
+                        <option value="Amazing Pools"></option>
+                    </datalist>
+                    <button class="btn search-btn" type="submit"><i
+                            class="fa-solid fa-magnifying-glass"></i>Search</button>
+                </form>
             </div>
             <div class="navbar-nav ms-auto">
                 <a class="nav-link" style="color: #222;" href="/listings/new">Airbnb your Home</a>
@@ -50,4 +35,122 @@
             </div>
         </div>
     </div>
+</nav> -->
+
+<nav>
+    <div class="nav-con">
+        <div class="nav-start-con">
+            <div class="nav-logo-con">
+                <a class="nav-logo t-d-n" href="/listings">
+                    <h1 class="logo">Nestora</h1>
+                </a>
+            </div>
+            <div class="nav-explore-con">
+                <a class="nav-explore t-d-n" href="/listings">Explore</a>
+            </div>
+        </div>
+        <div class="nav-center-con">
+            <div class="nav-search-con">
+                <form class="search-farm" role="search">
+                    <input class="form-control me-2 search-inp" type="search" placeholder="Search Destinations"
+                        list="category">
+                    <datalist id="category">
+                        <option value="Rooms"></option>
+                        <option value="Iconic Cities"></option>
+                        <option value="Mountains"></option>
+                        <option value="castles"></option>
+                        <option value="Amazing Pools"></option>
+                    </datalist>
+                    <button class="btn search-btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i><p>Search</p></button>
+                </form>
+            </div>
+        </div>
+        <div class="nav-end-con">
+            <div class="nav-add-con">
+                <a class="nav-add t-d-n" href="/listings/new">Airbnb your Home</a>
+                <a class="nav-add-sm t-d-n" href="/listings/new">Airbnb</a>
+            </div>
+            <div class="nav-menu-con">
+                <% if(!currUser) { %>
+                    <a class="nav-link " style="color: #222;" href="/signup"><b>Sign up</b></a>
+                    <a class="nav-link" style="color: #222;" href="/login"><b>log in</b></a>
+                    <% } %>
+                        <% if(currUser) { %>
+                            <a class="nav-link" style="color: #222;" href="/logout"><b>log out</b></a>
+                            <% } %>
+            </div>
+        </div>
+    </div>
+    <hr class="nav-hr">
+
+    <div id="filters" class="fill-container">
+        <div class="filter">
+            <div><i class="fa-solid fa-fire"></i></div>
+            <p>Trending</p>
+        </div>
+        <div class="filter">
+            <div><i class="fa-solid fa-bed"></i></div>
+            <p>Rooms</p>
+        </div>
+        <div class="filter">
+            <div><i class="fa-solid fa-mountain-city"></i></div>
+            <p>Iconic Cities</p>
+        </div>
+        <div class="filter">
+            <div><i class="fa-solid fa-mountain"></i></div>
+            <p>Mountains</p>
+        </div>
+        <div class="filter">
+            <div><i class="fa-brands fa-fort-awesome"></i></div>
+            <p>Castles</p>
+        </div>
+        <div class="filter">
+            <div><i class="fa-solid fa-person-swimming"></i></div>
+            <p>Amazing Pools</p>
+        </div>
+        <div class="filter">
+            <div><i class="fa-solid fa-campground"></i></div>
+            <p>Camping</p>
+        </div>
+        <div class="filter">
+            <div><i class="fa-solid fa-cow"></i></div>
+            <p>Farms</p>
+        </div>
+        <div class="filter">
+            <div><i class="fa-solid fa-tower-observation"></i></div>
+            <p>Towers</p>
+        </div>
+        <div class="filter">
+            <div><i class="fa-regular fa-snowflake"></i></div>
+            <p>Arctic</p>
+        </div>
+        <div class="filter">
+            <div><i class="fa-solid fa-igloo"></i></div>
+            <p>Domes</p>
+        </div>
+        <div class="filter">
+            <div><i class="fa-solid fa-sailboat"></i></div>
+            <p>Boats</p>
+        </div>
+        <div class="filter">
+            <div><i class="fa-solid fa-building"></i></div>
+            <p>Apartments</p>
+        </div>
+        <div class="filter">
+            <div><i class="fa-solid fa-hotel"></i></div>
+            <p>Hotels</p>
+        </div>
+        <div class="filter">
+            <div><i class="fa-solid fa-tree"></i></div>
+            <p>Forests</p>
+        </div>
+        <!-- <div class="tax-toggle">
+                <div class="form-check-reverse form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="switchCheckDefault">
+                    <label class="form-check-label" for="switchCheckDefault">Display total after taxes</label>
+                  </div>
+            </div> -->
+    </div>
+
 </nav>
+<script src="/js/nav.js"></script>
