@@ -72,11 +72,11 @@
             </div>
             <div class="nav-menu-con">
                 <% if(!currUser) { %>
-                    <a class="nav-link " style="color: #222;" href="/signup"><b>Sign up</b></a>
-                    <a class="nav-link" style="color: #222;" href="/login"><b>log in</b></a>
+                    <a class="bott-signup" style="color: #222;" href="/signup"><b>Sign up</b></a>
+                    <a style="color: #222;" href="/login"><b>log in</b></a>
                     <% } %>
                         <% if(currUser) { %>
-                            <a class="nav-link" style="color: #222;" href="/logout"><b>log out</b></a>
+                            <a style="color: #222;" href="/logout"><b>log out</b></a>
                             <% } %>
             </div>
         </div>
@@ -151,6 +151,28 @@
                   </div>
             </div> -->
     </div>
-
 </nav>
+<div class="bottom-nav">
+    <div class="bott-explore-con">
+        <a href="listings" class="t-d-n bott-explore">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            Explore
+        </a>
+    </div>
+    <div class="bott-add-con">
+        <a href="/listings/new">
+            <i class="fa-solid fa-plus bott-add-icon"></i>
+        </a>
+    </div>
+    <div class="bott-menu-con">
+        <% if(!currUser) { %>
+            <a class="bott-signup t-d-n" style="color: #222;" href="/signup"><b>Sign up</b></a>
+            <a class="t-d-n" style="color: #222;" href="/login"><b>log in</b></a>
+            <% } %>
+                <% if(currUser) { %>
+                    <a class="t-d-n" style="color: #222;" href="/logout"><b>log out</b></a>
+                    <% } %>
+    </div>
+</div>
+</div>
 <script src="/js/nav.js"></script>

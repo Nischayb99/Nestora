@@ -1,0 +1,45 @@
+/* Footer Style */
+.f-links{
+    text-decoration: none;
+    color: #222;
+}
+.f-info-links a{
+    text-decoration: none;
+    color: #222;
+}
+.f-info-links a:hover{
+    text-decoration: underline;
+}
+.f-info-links, 
+.f-info-socials, 
+.f-info-brand{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.f-info-socials i{
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+.f-info{
+    text-align: center;
+    height: 8rem;
+    background-color: #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space_evenly;
+}
+
+.bottom-div {
+    height: 5rem;
+    width: 99dvw;
+    background-color: #ebebeb;
+    display: none;
+  }
+  @media (max-width: 440px) {
+    .bottom-div{
+        display: flex;
+    }
+  }
