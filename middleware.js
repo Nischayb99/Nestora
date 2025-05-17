@@ -60,18 +60,3 @@ module.exports.isReviewAuthor = async (req, res, next) => {
     }
     next();
 };
-
-// module.exports.validateListing = async (req, res, next) => {
-//     try {
-//         if (req.body._method) {
-//             delete req.body._method; // 🚫 Remove _method before validation
-//         }
-
-//         await listingSchema.validateAsync(req.body); // ✅ Await the promise
-
-//         next(); // ✅ If validation passes, go ahead
-//     } catch (error) {
-//         let errMsg = error.details.map((el) => el.message).join(",");
-//         throw new ExpressError(400, errMsg);
-//     }
-// };
